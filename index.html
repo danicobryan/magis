@@ -8,12 +8,13 @@
 
     <title>MAGIS Service Organization</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script type="text/javascript">
 		$(document).ready(function () {
 		    $('.carousel').carousel({
@@ -31,7 +32,7 @@
 	<script src="//www.powr.io/powr.js" external-type="html"></script> 
 
 
-    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <link type="text/javascript" src="index.js"/>
 
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet"> -->
@@ -79,10 +80,9 @@
         <div class="carousel-inner">
         	<div class="carousel-caption">
                 <div class="intro-body text-center">
-                    <p class="welcome">Welcome To</p>
                     <h1 class="main-heading">MAGIS Service Organization</h1>
-                    <h1 class="small-heading">Loyola Marymount University</h1> 
-                    <h1 class="small-heading">Est. 2003</h1>
+                    <h1 class="small-heading">LOYOLA MARYMOUNT UNIVERSITY</h1> 
+                    <h1 class="small-heading">EST. 2003</h1>
                 </div>
             </div>
             <div class="item active">
@@ -92,6 +92,7 @@
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
+                <div class="overlay"></div>
                 <div class="fill" style="background-image:url('images/Retreat2016.jpg');"></div>
                 <div class="carousel-caption">
                     <h2></h2>
@@ -99,6 +100,7 @@
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
+                <div class="overlay"></div>
                 <div class="fill" style="background-image:url('images/Graduation2017.jpg');"></div>
                 <div class="carousel-caption">
                     <h2></h2>
@@ -150,7 +152,8 @@
         <div class="container pillars">
         	<div class="row">
         		<div class="col-lg-12 col-md-12">
-        			<h2 class="wow fadeInUp text-center">Our 3 Pillars</h2>
+        			<h3 class="wow fadeInUp text-center">OUR 3 PILLARS</h3>
+        			<br>
         		</div>
         	</div>
 	        <div class="row">
@@ -248,9 +251,10 @@
 		    		</div>
 		    		<div class="col-md-4 col-lg-4 caption">
 	        			<h3>Homeless Understanding Week</h3>
+	        			<br>
 	        			<p><strong>WHEN:</strong> Fall Semester</p>
 	        			<p><strong>EVENT DESCRIPTION:</strong></p>
-	        			<p>
+	        			
 		    		</div>
 		    		<div class="col-md-2 col-lg-2"></div>
 		    	</div>
@@ -263,6 +267,7 @@
 		    		</div>
 		    		<div class="col-md-4 col-lg-4 caption">
 	        			<h3>Better World Books Drive</h3>
+	        			<br>
 	        			<p><strong>WHEN:</strong> Finals Week semesterly</p>
 	        			<p><strong>EVENT DESCRIPTION:</strong></p>
 		    		</div>
@@ -277,6 +282,7 @@
 		    		</div>
 		    		<div class="col-md-4 col-lg-4 caption">
 	        			<h3>48 Hour</h3>
+	        			<br>
 	        			<p><strong>WHEN:</strong> Spring Semester</p>
 	        			<p><strong>EVENT DESCRIPTION:</strong></p>
 		    		</div>
@@ -295,7 +301,7 @@
 
 
     
-    <div id="join" class="join">
+    <div id="join" class="join fill" style="background-image:url('images/inductionpillars.jpg');" >
     	<div id="container">
     		<div id="row">
 	            <div class="col-md-12 text-center">
@@ -312,7 +318,7 @@
 	        	</div>
 	        	<div class="col-md-4">
 	        		<div class="packages">
-		        		<h4>Application FAQs</h4>
+		        		<h3>APPLICATION FAQs</h3>
 		        		<br>
 		        		<p><strong>WHEN CAN I APPLY?</strong></p>
 		        		<p>All LMU Service Organizations recruit at the beginning of the Spring Semester.</p>
@@ -327,7 +333,7 @@
 	        	</div>
 	        	<div class="col-md-4">
 	        		<div class="packages">
-		        		<h4>RECRUITMENT CHECKLIST</h4>
+		        		<h3>RECRUITMENT CHECKLIST</h3>
 		        		<br>
 		        		<p><strong>✓</strong> Go to All Org Night at the beginning of the Semester</p>
 		        		<p><strong>✓</strong> Attend week-long recruitment events to interact with members and learn more about the organization</p>
@@ -340,6 +346,12 @@
 	        </div>
     	</div>
     </div>
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
 
 
 

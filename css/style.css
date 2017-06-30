@@ -20,6 +20,10 @@
   width: auto;
 }
 
+header{
+    background-color: black;
+}
+
 .overlay{
     display: block;
     width: 100%;
@@ -34,7 +38,7 @@
 
 html, body{
     height:100%;
-    background-color: #000000;
+    /*background-color: #000000;*/
 }
 
 .carousel,
@@ -217,7 +221,7 @@ hr{
 
 .placements {
     padding: 50px 0;
-    background-color: black;
+    background-color: white;
     text-align: center;
 }
 
@@ -244,6 +248,9 @@ hr{
 
 .events {
     text-align: center;
+    background-color: black;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .events img {
@@ -279,9 +286,22 @@ hr{
 
 
 .join {
-    padding: 50px 0;
-    background-color: white;
+
+    overflow: auto;
+    
+    
+
 }
+
+.join img {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.join h1 {
+    color: white;
+}
+
 
 .join .packages {
     
@@ -290,21 +310,5 @@ hr{
     background-color: black;
     border-radius: 5px;
     margin-top: 30px;
+    height: 500px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
