@@ -57,12 +57,13 @@ html, body{
     /*-o-background-size: cover;*/
 }
 
-.carousel,
-.carousel-inner {
+.carousel .carousel-inner {
 	width:100%;
 	height:100%;
 	z-index:0;
 	overflow:hidden;
+    display: block;
+    transition: none;
 }
 
 
@@ -150,15 +151,14 @@ hr{
 
 
 .service, .diversity, .spirituality {
-    height: 300px;
     padding: 0;
 }
 
 
 .pillars {
     
-    padding: 80px 80px 80px;
-    margin-top: 50px;
+    padding: 0px 0px 80px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -266,7 +266,7 @@ hr{
 
 .events {
     text-align: center;
-    background-color: black;
+    background-color: #222222;
     padding-bottom: 100px;
     padding-top: 50px;
 }
@@ -303,8 +303,11 @@ hr{
 
 
 
-.join {
 
+/****** JOIN *******/
+
+.join {
+    background-color: black;
     overflow: auto;  
     padding: 30px;
 
@@ -319,12 +322,23 @@ hr{
 }
 
 .join img {
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 200px;
+    max-width: 200px;
+    padding-bottom: 30px;
 }
 
 .join h1 {
     color: white;
+}
+
+.join h3 {
+    text-align: center;
+}
+
+.join .col-md-6, 
+.join .col-lg-6{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -335,8 +349,22 @@ hr{
     background-color: black;
     border-radius: 5px;
     margin-top: 30px;
-    height: 500px;
+
 }
+
+@media(max-width:768px) {
+    
+    .join .col-md-6, 
+    .join .col-lg-6{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+
+/******* FOOTER ********/
 
 
 
