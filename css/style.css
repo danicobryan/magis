@@ -63,6 +63,15 @@ hr{
   width: auto;
 }
 
+
+/***** END NAVIGATION BAR *****/
+
+
+
+
+/***** HOME PAGE *****/
+
+
 header{
     background-color: black;
 }
@@ -135,8 +144,6 @@ header{
 }
 
 @media(max-width: 768px) {
-
-
     .intro-body{
         left: 9%;
         margin-left: -40px;
@@ -149,9 +156,13 @@ header{
     .small-heading {
         font-size: 20px;
     }
-
-
 }
+
+/***** END HOME PAGE *****/
+
+
+
+/***** ABOUT US *****/
 
 .aboutUs {
     position: relative;
@@ -192,7 +203,6 @@ header{
 
 .pillars h2,
 .pillars h4 {
-    
     /*color: #4c4c4c;*/
     margin: 20px 0 20px;
 }
@@ -202,16 +212,14 @@ header{
 }
 
 
-.pillars p {
-    
+.pillars p { 
     /*color: #737373;*/
     font-size: 14px;
     padding-bottom: 40px;
 }
 
 
-.pillars i {
-    
+.pillars i {   
     height: 80px;
     width: 80px;
     /*font-size: 30px;*/
@@ -251,6 +259,15 @@ header{
 }
 
 
+/***** END ABOUT US *****/
+
+
+
+
+/***** PLACEMENTS *****/
+
+
+
 .placements {
     padding: 50px 0;
     background-color: white;
@@ -281,12 +298,19 @@ header{
 }
 
 @media(max-width:768px) {
-    
-    .placements {
-        
+    .placements {   
         padding: 30px;
     }
 }
+
+
+/***** END PLACEMENTS *****/
+
+
+
+
+
+/***** EVENTS *****/
 
 
 .events {
@@ -308,8 +332,12 @@ header{
     text-align: left;
 }
 
-@media(max-width:768px) {
-    
+.events .carousel-control.left, 
+.events .carousel-control.right {
+    background-image: none
+}
+
+@media(max-width:768px) {   
     .events img {
         height: 350px;
         padding: 50px;
@@ -325,6 +353,8 @@ header{
         padding-top: 0px;
     }
 }
+
+/***** END EVENTS *****/
 
 
 
@@ -369,8 +399,7 @@ header{
 }
 
 
-.join .packages {
-    
+.join .packages {    
     padding: 30px;
     border: 1px solid #ccc;
     background-color: black;
@@ -379,10 +408,7 @@ header{
 
 }
 
-
-
-@media(max-width:768px) {
-    
+@media(max-width:768px) {    
     .join .col-md-6, 
     .join .col-lg-6{
         padding-left: 10px;
@@ -391,23 +417,23 @@ header{
 }
 
 
+/***** END JOIN *****/
+
+
 
 
 /******* FOOTER ********/
 
 
 
-
-.footer {
-    
+.footer {   
     padding: 30px;
     color: #cccccc;
     background-color: #222222;
 }
 
 
-.footer .social {
-    
+.footer .social {   
     font-size: 20px;
     height: 30px;
     width: 30px;
@@ -417,5 +443,7 @@ header{
     margin-bottom: 10px;
     margin-right: 5px;
 }
+
+/***** END FOOTER *****/
 
 
