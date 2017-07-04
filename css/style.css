@@ -11,6 +11,22 @@ a:hover{
     color: gray;
 }
 
+.btn {
+    background-color: transparent;
+    border-color: white;
+    margin-bottom: 50px;
+    color: white;
+
+}
+
+.btn:hover {
+    background-color: gray;
+    border-color: white;
+    color: white;
+}
+
+
+
 
 .MainTitle {
     display: inline; 
@@ -361,6 +377,8 @@ hr{
     margin-top: 30px;
 
 }
+
+
 
 @media(max-width:768px) {
     
