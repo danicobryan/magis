@@ -3,12 +3,31 @@
     margin: 0;   
 }
 
+html, body{
+    height:100%;
+    /*background-color: #000000;*/
+}
+
 a {
     color: white;
 }
 
 a:hover{
     color: gray;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: white;
+}
+
+
+hr{
+    border-color: #DAA520;
+    border-width: 5px;
+    width: 100px;
+    max-width: 100px;
+    margin: 25px auto;
+    border-bottom: none;    
 }
 
 .btn {
@@ -28,11 +47,7 @@ a:hover{
 
 
 
-.MainTitle {
-    display: inline; 
-    white-space: nowrap;
-    margin-left: 10px;
-}
+/***** NAVIGATION BAR *****/
 
 .navbar-brand {
   padding: 0px;
@@ -60,10 +75,6 @@ header{
     bottom: 0;
 }
 
-html, body{
-    height:100%;
-    /*background-color: #000000;*/
-}
 
 .carousel,
 .item,
@@ -147,22 +158,6 @@ html, body{
 }
 
 
-
-
-h1, h2, h3, h4, h5, p {
-    color: white;
-}
-
-
-hr{
-    border-color: #DAA520;
-	border-width: 5px;
-	width: 100px;
-    max-width: 100px;
-    margin: 25px auto;
-    border-bottom: none;    
-}
-
 .block-image{
     display: block;
     margin-left: auto;
@@ -215,8 +210,10 @@ hr{
     
     height: 80px;
     width: 80px;
-    font-size: 30px;
-    padding: 25px 20px;
+    /*font-size: 30px;*/
+    font-size: 60px;
+    /*padding: 25px 20px;*/
+    padding-bottom: 40px;
     border-radius: 65%;
     background-color: black;
     color: white;
