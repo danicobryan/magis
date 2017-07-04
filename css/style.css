@@ -3,6 +3,14 @@
     margin: 0;   
 }
 
+a {
+    color: white;
+}
+
+a:hover{
+    color: gray;
+}
+
 
 .MainTitle {
     display: inline; 
@@ -310,6 +318,7 @@ hr{
     background-color: black;
     overflow: auto;  
     padding: 30px;
+    padding-bottom: 100px;
 
 }
 
@@ -324,6 +333,7 @@ hr{
 .join img {
     max-height: 200px;
     max-width: 200px;
+    padding-bottom: 30px;
     padding-bottom: 30px;
 }
 
