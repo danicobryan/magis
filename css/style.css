@@ -392,9 +392,11 @@ header{
 
 @media(max-width:768px) {   
     .events img {
-        height: 350px;
-        padding: 50px;
+        height: 300px;
+        padding: 30px;
         text-align: center;
+        width: auto;
+
 
     }
 
