@@ -50,7 +50,7 @@
 	<!-- ***** HOME ***** -->
 
 	<!-- Full Page Image Background Carousel Header -->
-	<header id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false">
+	<header id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false"> <!--data-pause="false"-->
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -422,20 +422,12 @@
 	<script type="text/javascript">
 
 		$(document).ready(function () {
-			$('#myCarousel').carousel({
-				interval: 6000,
-				cycle: true
-			});
-		});
-
-		/*$(document).ready(function () {
 			$('.carousel').carousel({
-				interval: 5000
+			    interval: 10000
 			});
-
-			$('.carousel').carousel('cycle');
-
-		});*/
+			$('.carousel-control.right').trigger('click');
+		});
+			
 	</script>
 
 
