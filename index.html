@@ -146,19 +146,19 @@
 					<!--<i class="fa fa-heart-o glyphicon-ring glyphicon-bordered" aria-hidden="true"></i>-->
 					<i class="fa fa-heart-o" aria-hidden="true"></i>
 					<h4>Service</h4>
-					<p>[Here is a short description of Service]</p>
+					<p>Members engage in service throughout the Los Angeles Community at placements related to homelessness and education, as well as on campus social justice events revolving around these issues.</p>
 				</div>
 				<div class="col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.8s">
 					<!--<i class="fa fa-globe glyphicon-ring glyphicon-bordered" aria-hidden="true"></i>-->
 					<i class="fa fa-globe" aria-hidden="true"></i>
 					 <h4>Diversity</h4>
-					<p>[Here is a short description of Diversity]</p>
+					<p>We embrace diversity by recruiting men from many different backgrounds, engaging in deep conversation on issues involving various opinions, and recognizing the beauty in all things.</p>
 				</div>
 				<div class="col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="1.4s">
 					<!--<i class="glyphicon glyphicon-fire glyphicon-ring glyphicon-bordered" aria-hidden="true"></i>-->
 					<i class="glyphicon glyphicon-fire" aria-hidden="true"></i>
 					<h4>Spirituality</h4>
-					<p>[Here is a short description of Spirituality]</p>
+					<p>We focus on the growth of the individual through the experiences we have, the people we encounter, and deep self reflection, always recognizing we are part of something bigger than ourselves. </p>
 				</div>
 			</div>
 		</div>
@@ -377,6 +377,36 @@
 	<!-- ***** END JOIN ***** -->
 
 
+
+	<!-- ***** MEDIA ***** -->
+
+	<div id="media" class="media">
+		<div class="container">
+			<div class="col-md-12 text-center">
+				<h1>Media</h1>
+				<hr>
+				<h3 class="wow fadeInUp" data-wow-delay="0.4s"><i>Follow us on Social Media @lmumagis</i></h2>
+				<br>
+			</div>
+			<div class="col-md-12 text-center">
+				<p class="text-center social-media">
+					<a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+				</p>
+			</div>
+			<div class="instagram">
+				<p> Check out our latest Instagram posts! </p>
+				<div id="instafeed" class="wow fadeIn" data-wow-delay="0.4s"></div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+
+	<!-- ***** END MEDIA ***** -->
+
+
 	<!-- ***** FOOTER ***** -->
 
 	<div id="footer" class="footer">
@@ -423,13 +453,27 @@
 
 
 
-	<!-- jQuery library -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/scrolling.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
 	<script>
 	new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+		
+		var feed = new Instafeed ({
+			get: 'user',
+			userId: '3915253621',
+			accessToken: '3915253621.a79b10b.2b2bcdc374a6414f938df6f0900d4d9a',
+			template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+			limit: 15,
+			resolution: 'standard_resolution'
+		});
+		feed.run();
 	</script>
 
 
