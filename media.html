@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Join Us</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+	
+</head>
+
+<body>
+
+	<!-- ***** NAVIGATION BAR ***** -->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+			</div>
+			<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="index.html#aboutUs">ABOUT</a></li>
+				<li><a href="service.html">SERVICE AND EVENTS</a></li>
+				<li><a href="join.html">JOIN</a></li>
+				<li><a href="media.html">MEDIA</a></li>
+				<li><a href="#footer">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ***** END NAVIGATION BAR ***** -->
+
+	
+	<!-- ***** MEDIA ***** -->
+
+	<div id="media" class="media">
+		<div class="container">
+			<div class="col-md-12 text-center">
+				<h1>Media</h1>
+				<hr>
+				<h3 class="wow fadeInUp" data-wow-delay="0.4s"><i>Follow us on Social Media @lmumagis</i></h2>
+				<br>
+			</div>
+			<div class="col-md-12 text-center wow fadeInUp" data-wow-delay="0.8s">
+				<p class="text-center social-media">
+					<a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+				</p>
+			</div>
+			<div class="instagram">
+				<p class="wow fadeInUp" data-wow-delay="0.8s"> Check out our latest Instagram posts! </p>
+				<div id="instafeed" class="wow fadeInUp" data-wow-delay="0.8s"></div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+
+	<!-- ***** END MEDIA ***** -->
+
+
+
+
+	<div id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<h4>Contact Us</h4>
+					<p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
+					<a href="mailto:magismen@gmail.com?Subject=Hello" target="_top"><p><i class="fa fa-envelope" aria-hidden="true"></i> magismen@gmail.com</p></a>
+					<!--<p><i class="fa fa-phone" aria-hidden="true"></i> +1 222 222 2222</p>-->
+					<p><i class="fa fa-globe" aria-hidden="true"></i> www.lmumagis.com</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<h4>About</h4>
+					<a href="#aboutUs">
+					<p><i class="fa fa-globe" aria-hidden="true"></i> About Us</p>
+					</a>
+					<a href="http://www.lmu.edu">
+					<p><i class="fa fa-globe" aria-hidden="true"></i> LMU Website</p>
+					</a>
+					<a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/">
+					<p><i class="fa fa-globe" aria-hidden="true"></i> Center for Service and Action</p>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<h4>Stay in touch</h4>
+					<p>
+					<a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+					<!--<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>-->
+					Follow Us @LMUMAGIS</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<p style="text-align: right; padding-top: 50px;">Website by Danico Pidlaoan</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ***** END FOOTER ***** -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/scrolling.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+		
+		var feed = new Instafeed ({
+			get: 'user',
+			userId: '3915253621',
+			accessToken: '3915253621.a79b10b.2b2bcdc374a6414f938df6f0900d4d9a',
+			template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+			limit: 5,
+			resolution: 'standard_resolution'
+		});
+		feed.run();
+	</script>
+
+
+
+
+</body>
+</html>
