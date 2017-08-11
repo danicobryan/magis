@@ -145,6 +145,10 @@ header{
   z-index: 2;
 }
 
+.full-width {
+    width: 100%;
+}
+
 
 
 
@@ -161,11 +165,19 @@ header{
 .title{ color:white; font-size:40px; }
 
 .carousel-caption {
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 200px;
-    bottom: 100px;
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
 }
 
 .intro-body {
@@ -366,7 +378,7 @@ header{
 
 .events {
     text-align: center;
-    background-color: #222222;
+    background-color: black;
     padding-bottom: 100px;
     padding-top: 50px;
 }
@@ -415,7 +427,7 @@ header{
 /****** JOIN *******/
 
 .join {
-    background-color: black;
+    background-color: gray;
     overflow: auto;  
     padding: 30px;
     padding-bottom: 100px;
@@ -431,8 +443,8 @@ header{
 }
 
 .join img {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
     padding-bottom: 30px;
     padding-bottom: 30px;
 }
@@ -441,8 +453,8 @@ header{
     color: white;
 }
 
-.join h3 {
-    text-align: center;
+.join p {
+    text-align: left;;
 }
 
 .join .col-md-6, 
@@ -459,6 +471,29 @@ header{
     border-radius: 5px;
     margin-top: 30px;
 
+}
+
+.join .row-1 {
+    background-color: black;
+}
+
+.join .row-2{
+    background-color: #222222;
+}
+
+.join .left-side{
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.join .right-side {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 
 @media(max-width:768px) {    
