@@ -199,20 +199,7 @@ header{
     height: 100%;
 }
 
-.intro-body {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -390px;
-    margin-top: -140px;
-}
-
 @media(max-width: 768px) {
-    .intro-body{
-        left: 9%;
-        margin-left: -40px;
-    }
-
     .main-heading {
         font-size: 50px;
     }
@@ -547,7 +534,25 @@ header{
     
 }
 
-@media(max-width:768px) {    
+@media(max-width:768px) {   
+    .join-home .main-heading{
+        color: white;
+        font-size: 36px;
+        letter-spacing: 0px;
+    }
+
+    .join h3 {
+        font-size: 20px;
+    }
+
+    .join .left-side,
+    .join .right-side {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     .join .col-md-6, 
     .join .col-lg-6{
         padding-left: 10px;
