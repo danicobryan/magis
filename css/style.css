@@ -3,9 +3,9 @@
     margin: 0;   
 }
 
-html, body{
-    height:100%;
-    /*background-color: #000000;*/
+html, body {
+    height:100%; 
+    width:100%; 
 }
 
 body {
@@ -588,7 +588,6 @@ header{
 }
 
 
-
 .media p i {   
     color: black
     height: 50px !important;
@@ -630,9 +629,6 @@ header{
     overflow: hidden;
     filter:alpha(opacity=100);
     display: inline-block;
-
-    
-
 }
 
 #instafeed img:hover {
