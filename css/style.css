@@ -576,9 +576,15 @@ header{
 
 .media h1,
 .media h2,
+.media h3,
+.media h4,
 .media p,
 .media i{
     color: black;
+}
+
+.media a {
+    color: gray;
 }
 
 
@@ -632,12 +638,38 @@ header{
 #instafeed img:hover {
     opacity:0.8;
     filter:alpha(opacity=80);
+}
 
-    }
+.media .facebook {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #F5F5F5;
+}
+
+.media .facebook-page {
+    padding-left: 30px; 
+    padding-right: 30px;
+}
 
 @media(max-width:768px) {    
     #instafeed img {
         width: 30%;
+    }
+
+    .media .container {
+        width: 300px; 
+    }
+
+    .facebook-page {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 300px; 
+        margin-left: -65px;
+
+    }
+
+    .facebook-page iframe {
+        height: 130px;
     }
 }
 
