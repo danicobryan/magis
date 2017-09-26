@@ -680,14 +680,14 @@ header{
 
 
 
-.footer {   
+.contact {   
     padding: 30px;
     color: #cccccc;
     background-color: #222222;
 }
 
 
-.footer .social {   
+.contact .social {   
     font-size: 20px;
     height: 30px;
     width: 30px;
