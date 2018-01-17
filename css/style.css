@@ -12,6 +12,10 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+section {
+    padding: 40px;
+}
+
 a {
     color: white;
 }
@@ -58,6 +62,7 @@ hr{
     border-color: white;
     margin-bottom: 50px;
     color: white;
+    font-size: 18px;
 
 }
 
@@ -65,6 +70,11 @@ hr{
     background-color: gray;
     border-color: white;
     color: white;
+}
+
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 
@@ -217,10 +227,10 @@ header{
 
 .aboutUs {
     position: relative;
-    padding: 50px 0;
     top: 0;
     left: 0;
     background-color: #000000;
+    padding-bottom: 60px !important;
 }
 
 
@@ -242,9 +252,9 @@ header{
 
 
 .pillars {    
-    padding: 0px 0px 60px;
     margin-top: 0px;
     text-align: center;
+    background-color: black;
 }
 
 .pillars .text-center {
@@ -309,17 +319,17 @@ header{
 
 .explore {
     background-color: black;
-    padding-bottom: 125px;
-
 }
 
 .explore .carousel-inner .item img {
     overflow: hidden;
 }
+
 .explore .carousel-inner .item, 
 .explore .carousel-inner .item img.scale {
     max-height: 200px;
 }
+
 @media screen and (min-width: 768px) {
     .explore .carousel-inner .item, 
     .explore .carousel-inner .item img.scale {
@@ -336,9 +346,27 @@ header{
     bottom: 0px;
 }
 
+.about-bg-left {
+    position: relative;
+    min-height: 350px;
+    background-size: cover;
+}
 
+.about-bg-right {
+    position: relative;
+    min-height: 350px;
+    background: url('http://alumnicommunity.lmu.edu/s/1013/images/editor/alumni_relations/feast_of_st_ignatius_loyola.jpg') no-repeat center center;
+    background-size: cover;
+    filter: grayscale(90%);
+}
 
+.nopadding .fa {
+    font-size: 90px;
+}
 
+.nopadding .fa:hover {
+    color: gray;
+}
 
 
 
