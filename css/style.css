@@ -230,7 +230,6 @@ header{
     top: 0;
     left: 0;
     background-color: #000000;
-    padding-bottom: 60px !important;
 }
 
 
@@ -254,17 +253,8 @@ header{
 .pillars {    
     margin-top: 0px;
     text-align: center;
-    background-color: black;
-}
-
-.pillars .text-center {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-.pillars h2,
-.pillars h4 {
-    margin: 20px 0 20px;
+    background-color: #393a3b;
+    padding-bottom: 60px !important;
 }
 
 .pillars h2{
@@ -286,7 +276,7 @@ header{
     /*padding: 25px 20px;*/
     padding-bottom: 40px;
     border-radius: 65%;
-    background-color: black;
+    background-color: transparent;
     color: white;
 }
 
@@ -321,21 +311,10 @@ header{
     background-color: black;
 }
 
-.explore .carousel-inner .item img {
-    overflow: hidden;
+.explore h1 {
+    padding-top: 30px;
 }
 
-.explore .carousel-inner .item, 
-.explore .carousel-inner .item img.scale {
-    max-height: 200px;
-}
-
-@media screen and (min-width: 768px) {
-    .explore .carousel-inner .item, 
-    .explore .carousel-inner .item img.scale {
-        max-height: 400px;
-    }
-}
 .explore .carousel-caption {
     left: 0 !important;
     right: 0 !important;
