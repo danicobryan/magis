@@ -297,8 +297,9 @@ header{
 
 @media(max-width:768px) {
     
-    .about-us .paragraph{
-        padding: 10px !important;
+    .about-us{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
     .pillars {
         padding: 30px;
