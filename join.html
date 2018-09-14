@@ -1,204 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Join Us</title>
+    <title>Join Us</title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 </head>
 
-<body>
+<body onload="$(document).ready(function(){$(this).scrollTop(0);});">
 
-	<!-- ***** NAVIGATION BAR ***** -->
+    <!-- ***** NAVIGATION BAR ***** -->
 
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
-			</div>
-			<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
-				<li><a href="index.html">ABOUT</a></li>
-				<li><a href="service.html">SERVICE AND EVENTS</a></li>
-				<li><a href="join.html">JOIN</a></li>
-				<li><a href="media.html">MEDIA</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-		</div>
-	</nav>
+                <a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE AND EVENTS</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<!-- ***** END NAVIGATION BAR ***** -->
+    <!-- ***** END NAVIGATION BAR ***** -->
 
-	<!-- ***** HOME ***** -->
+    <!-- ***** HOME ***** -->
 
-	<!-- Full Page Image Background Carousel Header -->
-	<header id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="8000">
-		<!-- Indicators -->
-		<!--
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="8000">
+        <!-- Indicators -->
+        <!--
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>-->
 
-		<!-- Wrapper for Slides -->
-		<div id="join-home" class="carousel-inner join-home">
-			<div class="carousel-caption">
-				<div class="intro-body full-width text-center">
-					<h1 class="main-heading wow fadeInUp" data-wow-delay="0.4s">MAGIS RECRUITMENT</h1>
-					<h1 class="small-heading wow fadeInUp" data-wow-delay="0.8s">Interested in becoming a MAGIS Man?</h1>
-					<br>
-					<a href="#join"><button class="btn wow fadeInUp" data-wow-delay="1.8s">LEARN MORE</button></a>
-					<a href="https://orgsync.com/169839/forms/300069"><button class="btn wow fadeInUp" data-wow-delay="1.8s">APPLY ONLINE</button></a>
-				</div>
-			</div>
-			<div class="item active">
-				<!-- Set the first background image using inline CSS below. -->
-				<div class="overlay"></div>
-				<div class="fill" style="background-image:url('images/inductionpillarscopy.jpg');"></div>
-			</div>
-		</div>
+        <!-- Wrapper for Slides -->
+        <div id="join-home" class="carousel-inner join-home">
+            <div class="carousel-caption">
+                <div class="intro-body full-width text-center">
+                    <h1 class="main-heading wow fadeInUp" data-wow-delay="0.4s">MAGIS RECRUITMENT</h1>
+                    <h1 class="small-heading wow fadeInUp" data-wow-delay="0.8s">Interested in becoming a MAGIS Man?</h1>
+                    <br>
+                    <a href="#join"><button class="btn wow fadeInUp" type="button" data-wow-delay="1.8s">LEARN MORE</button></a>
+                    <a href="https://orgsync.com/169839/forms/300069"><button class="btn wow fadeInUp" type="button" data-wow-delay="1.8s">APPLY ONLINE</button></a>
+                </div>
+            </div>
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="overlay"></div>
+                <div class="fill" style="background-image:url('images/inductionpillarscopy.jpg');"></div>
+            </div>
+        </div>
 
-		<!-- Controls -->
-		<!--
+        <!-- Controls -->
+        <!--
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 			<span class="icon-prev"></span>
 		</a>
 		<a class="right carousel-control" href="#myCarousel" data-slide="next">
 			<span class="icon-next"></span>
 		</a>-->
-	</header>
+    </header>
 
-	 <!-- ***** END HOME ***** -->
+    <!-- ***** END HOME ***** -->
 
+    <!-- ***** JOIN ***** -->
 
-
-	 <div id="join" class="join" >
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<br>
-					<h1>Recruitment Information</h1>
-					<hr>
-					<h3 class="wow fadeInUp" data-wow-delay="0.4s"><i>Every year, we say farewell to our seniors and seek for new men who are passionate about service, diversity, and spirituality to join our brotherhood. If you are interested, begin your journey and apply!</i></h2>
+    <div id="join" class="join">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <h1>Recruitment Information</h1>
+                    <hr>
+                    <h3 class="wow fadeInUp" data-wow-delay="0.4s"><i>Every year, we say farewell to our seniors and seek for new men who are passionate about service, diversity, and spirituality to join our brotherhood. If you are interested, begin your journey and apply!</i></h2>
 					<br>
 				</div>
 			</div>
-
 			<div class="row row-1">
 				<div class="col-md-6 text-center left-side wow fadeInRight" data-wow-delay="0.4s">
 					<img src="images/Recruitment.png" class="block-image img-responsive" height=75% width=75%>
 				</div>
 				<div class="col-md-6 right-side wow fadeInRight" data-wow-delay="0.8s">
 					<h3>RECRUITMENT CHECKLIST</h3>
-					<br>
-					<p><strong>✓</strong> Go to All Org Night at the beginning of the Semester</p>
-					<p><strong>✓</strong> Attend week-long recruitment events to interact with members and learn more about the organization</p>
-					<p><strong>✓</strong> Complete an application, which can be found on the <a href="https://orgsync.com/169839/forms/300069"><u>Service Organization Community LEO page</u></a></p>
-					<p><strong>✓</strong> Sign up for an interview time at the end of the application</p>
-					<p><strong>✓</strong> You will be notified of your status Mid-Feruary</p>
-				</div>
+                    <br>
+                    <p><strong>✓</strong> Go to All Org Night at the beginning of the Semester</p>
+                    <p><strong>✓</strong> Attend week-long recruitment events to interact with members and learn more about the organization</p>
+                    <p><strong>✓</strong> Complete an application, which can be found on the <a href="https://orgsync.com/169839/forms/300069"><u>Service Organization Community LEO page</u></a></p>
+                    <p><strong>✓</strong> Sign up for an interview time at the end of the application</p>
+                    <p><strong>✓</strong> You will be notified of your status Mid-Feruary</p>
+                </div>
+            </div>
+            <div class="row row-2">
+                <div class="col-md-6 left-side wow fadeInLeft" data-wow-delay="0.8s">
+                    <h3>APPLICATION FAQs</h3>
+                    <br>
+                    <p><strong>WHEN CAN I APPLY?</strong></p>
+                    <p>All LMU Service Organizations recruit at the beginning of the Spring Semester.</p>
+                    <br>
+                    <p><strong>AM I ELIGIBLE?</strong></p>
+                    <p>All applicants must be male freshmen, sophomores, or juniors with a minimum 2.5 GPA.</p>
+                    <br>
+                    <p><strong>WHERE DO I APPLY?</strong></p>
+                    <p>All applications can be found on the <a href="https://orgsync.com/169839/forms/300069"><u>Service Organization Community LEO page</u></a>.</p>
+                </div>
+                <div class="col-md-6 right-side wow fadeInLeft" data-wow-delay="0.4s">
+                    <img src=" images/inductionpillarscopysquare.jpg " class="block-image img-responsive">
 
+                </div>
+            </div>
+        </div>
+    </div>
 
-			</div>
+    <!-- ***** FOOTER ***** -->
 
-			<div class="row row-2">
-				<div class="col-md-6 left-side wow fadeInLeft" data-wow-delay="0.8s">
+    <div id="contact " class="contact ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa fa-home " aria-hidden="true "></i> Loyola Marymount University</p>
+                    <a href="mailto:magismen@gmail.com?Subject=Hello " target="_top ">
+                        <p><i class="fa fa-envelope " aria-hidden="true "></i> magismen@gmail.com</p>
+                    </a>
+                    <!--<p><i class="fa fa-phone " aria-hidden="true "></i> +1 222 222 2222</p>-->
+                    <a href="http://lmumagis.com ">
+                        <p><i class="fa fa-globe " aria-hidden="true "></i> www.lmumagis.com</p>
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>About</h4>
+                    <a href="https://orgsync.com/125286/chapter ">
+                        <p><i class="fa fa-globe " aria-hidden="true "></i> MAGIS - LMU EXP Online</p>
+                    </a>
+                    <a href="http://www.lmumagis.com ">
+                        <p><i class="fa fa-globe " aria-hidden="true "></i> MAGIS Service Organization</p>
+                    </a>
+                    <a href="http://www.lmu.edu ">
+                        <p><i class="fa fa-globe " aria-hidden="true "></i> Loyola Marymount University</p>
+                    </a>
+                    <a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/ ">
+                        <p><i class="fa fa-globe " aria-hidden="true "></i> LMU Center for Service and Action</p>
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>MAGIS Service Organization</h4>
+                    <p>Loyola Marymount University
+                        </br>1 LMU Drive
+                        </br>Los Angeles, CA 90045
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/lmumagis "><i class="social fa fa-facebook " aria-hidden="true "></i></a>
+                        <a href="https://www.instagram.com/lmumagis "><i class="social fa fa-instagram " aria-hidden="true "></i></a>
+                        <!-- <input type="email " placeholder="Subscribe For Updates "><button class="btn btn-success ">Subscribe</button> Follow Us @LMUMAGIS</p> -->
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <p style="text-align: right; padding-top: 50px; ">Website by Danico Pidlaoan</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-					<h3>APPLICATION FAQs</h3>
-					<br>
-					<p><strong>WHEN CAN I APPLY?</strong></p>
-					<p>All LMU Service Organizations recruit at the beginning of the Spring Semester.</p>
-					<br>
-					<p><strong>AM I ELIGIBLE?</strong></p>
-					<p>All applicants must be male freshmen, sophomores, or juniors with a minimum 2.5 GPA.</p>
-					<br>
-					<p><strong>WHERE DO I APPLY?</strong></p>
-					<p>All applications can be found on the <a href="https://orgsync.com/169839/forms/300069"><u>Service Organization Community LEO page</u></a>.</p>
-				</div>
-				<div class="col-md-6 right-side wow fadeInLeft" data-wow-delay="0.4s">
-					<img src="images/inductionpillarscopysquare.jpg" class="block-image img-responsive">
-				</div>
-			</div>
+    <!-- ***** END FOOTER ***** -->
 
-
-		</div>
-	</div>
-
-	<!-- ***** FOOTER ***** -->
-
-	<div id="contact" class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4">
-					<h4>Contact Us</h4>
-					<p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
-					<a href="mailto:magismen@gmail.com?Subject=Hello" target="_top"><p><i class="fa fa-envelope" aria-hidden="true"></i> magismen@gmail.com</p></a>
-					<!--<p><i class="fa fa-phone" aria-hidden="true"></i> +1 222 222 2222</p>-->
-					<a href="http://lmumagis.com"><p><i class="fa fa-globe" aria-hidden="true"></i> www.lmumagis.com</p></a>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<h4>About</h4>
-					<a href="https://orgsync.com/125286/chapter">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS - LMU EXP Online</p>
-					</a>
-					<a href="http://www.lmumagis.com">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS Service Organization</p>
-					</a>
-					<a href="http://www.lmu.edu">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> Loyola Marymount University</p>
-					</a>
-					<a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> LMU Center for Service and Action</p>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<h4>MAGIS Service Organization</h4>
-					<p>Loyola Marymount University
-					</br>1 LMU Drive
-					</br>Los Angeles, CA 90045
-					</p>
-
-					<p>
-					<a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
-					<!--<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>-->
-					Follow Us @LMUMAGIS</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<p style="text-align: right; padding-top: 50px;">Website by Danico Pidlaoan</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- ***** END FOOTER ***** -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/scrolling.js"></script>
-	<script>
-	new WOW().init();
-	</script>
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/wow.min.js "></script>
+    <script src="js/scrolling.js "></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
+
 </html>
