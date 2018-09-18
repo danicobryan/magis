@@ -1,306 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Service and Events</title>
+    <title>Service and Events</title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/style.css"/>
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 </head>
 
-<body>
+<body onload="$(document).ready(function(){$(this).scrollTop(0);});">
 
-	<!-- ***** NAVIGATION BAR ***** -->
+    <!-- ***** NAVIGATION BAR ***** -->
 
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
-			</div>
-			<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
-				<li><a href="index.html">ABOUT</a></li>
-				<li><a href="service.html">SERVICE AND EVENTS</a></li>
-				<li><a href="join.html">JOIN</a></li>
-				<li><a href="media.html">MEDIA</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-		</div>
-	</nav>
+                <a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE AND EVENTS</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<!-- ***** END NAVIGATION BAR ***** -->
+    <!-- ***** END NAVIGATION BAR ***** -->
 
-	<!-- ***** HOME ***** -->
 
-	<!-- Full Page Image Background Carousel Header -->
-	<header id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="8000">
-		<!-- Indicators -->
-		<!--
+    <!-- ***** HOME ***** -->
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="8000">
+        <!-- Indicators -->
+        <!--
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>-->
 
-		<!-- Wrapper for Slides -->
-		<div id="home" class="carousel-inner home">
-			<div class="carousel-caption">
-				<div class="intro-body full-width text-center">
-					<h1 class="small-heading wow fadeInUp" data-wow-delay="0.8s"></h1>
-					<h1 class="main-heading wow fadeInUp" data-wow-delay="0.4s">SERVICE</br>EVENTS</h1>
-					<h1 class="small-heading wow fadeInUp" data-wow-delay="1.4s"></h1>
-					<br>
-					<a href="#placements"><button class="btn wow fadeInUp" data-wow-delay="1.8s">SERVICE PLACEMENTS</button></a>
-					<a href="#events"><button class="btn wow fadeInUp" data-wow-delay="1.8s">ANNUAL EVENTS</button></a>
-				</div>
-			</div>
-			<div class="item active">
-				<!-- Set the first background image using inline CSS below. -->
-				<div class="overlay"></div>
-				<div class="fill" style="background-image:url('images/retreat2018.jpg');"></div>
-			</div>
-		</div>
+        <!-- Wrapper for Slides -->
+        <div id="home" class="carousel-inner home">
+            <div class="carousel-caption">
+                <div class="intro-body full-width text-center">
+                    <h1 class="small-heading wow fadeInUp" data-wow-delay="0.8s"></h1>
+                    <h1 class="main-heading wow fadeInUp" data-wow-delay="0.4s">SERVICE</br>EVENTS</h1>
+                    <h1 class="small-heading wow fadeInUp" data-wow-delay="1.4s"></h1>
+                    <br>
+                    <a href="#placements"><button type="button" class="btn wow fadeInUp" data-wow-delay="1.8s">SERVICE PLACEMENTS</button></a>
+                    <a href="#events"><button type="button" class="btn wow fadeInUp" data-wow-delay="1.8s">ANNUAL EVENTS</button></a>
+                </div>
+            </div>
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="overlay"></div>
+                <div class="fill" style="background-image:url('images/retreat2018.jpg');"></div>
+            </div>
+        </div>
 
-		<!-- Controls -->
-		<!--
+        <!-- Controls -->
+        <!--
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 			<span class="icon-prev"></span>
 		</a>
 		<a class="right carousel-control" href="#myCarousel" data-slide="next">
 			<span class="icon-next"></span>
 		</a>-->
-	</header>
+    </header>
 
-	 <!-- ***** END HOME ***** -->
-
-
-
-	 <!-- ****** PLACEMENTS ****** -->
+    <!-- ***** END HOME ***** -->
 
 
-	<div id="placements" class="placements">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<br>
-					<h1>Our Service Placements</h1>
-					<hr>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-lg-4 wow fadeInRight" data-wow-delay="0.4s">
-					<img src="images/VerbLogo.jpg">
-					<h4>Verbum Dei High School</h4>
-					<p>An all-male Jesuit high school located in Watts, CA, members engage in tutoring and after school activities, ensuring that the student body maintains a 100% acceptance rate to colleges.</p>
-					<a href="https://www.verbumdei.us"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-					<a href="https://www.facebook.com/verbumdeihs/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://twitter.com/VerbumDeiHS"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-				</div>
-				<div class="col-md-4 col-lg-4 wow fadeInRight" data-wow-delay="0.8s">
-					<img src="images/SPYLogo.jpg">
-					<h4>Safe Place For Youth</h4>
-					<p>Safe Place for Youth is a shelter for youth experiencing the effects of Homelessness. Throughout the week, members serve at the Los Angeles placement by working directly with the youth. </p>
-					<a href="http://www.safeplaceforyouth.org"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-					<a href="https://www.facebook.com/SafePlaceForYouth/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/safeplaceforyouth/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</div>
-				<div class="col-md-4 col-lg-4 wow fadeInRight" data-wow-delay="1.2s">
-					<img src="images/GSSLogo.jpg">
-					<h4>Good Shepherd Shelter</h4>
-					<p>Good Shepherd Shelter is a shelter for women and their children escaping domestic abuse. Members work with children through helping in the classroom, tutoring, and participating in after school activities. </p>
-					<a href="http://www.goodshepherdshelter.org"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-					<a href="https://www.facebook.com/TheGoodShepherdShelter"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/gsshelter/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-4 col-lg-4 wow fadeInRight" data-wow-delay="0.8s">
-					<img src="images/ElEspejoLogo.jpg">
-					<h4>El Espejo</h4>
-					<p>Members participate in the El Espejo mentoring program at Lennox Middle School by providing mentorship to middle school students, tutoring, and participating in after school activities and field trips.</p>
-					<a href="http://lms.lennox.k12.ca.us"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-					<a href="https://www.facebook.com/LennoxMiddleSchool/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/lennoxleap/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</div>
-				<div class="col-md-4 col-lg-4 wow fadeInRight" data-wow-delay="1.2s">
-					<img src="images/BSCLogo.jpg">
-					<h4>Blessed Sacrament Church</h4>
-					<p>Blessed Sacrament Church is a parish in West Hollywood. Members serve in the food pantry and prepare and give out food to the community, helping to alleviate the effects of homelessness in the area. </p>
-					<a href="https://blessedsacramenthollywood.org"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-					<a href="https://www.facebook.com/pages/Blessed-Sacrament-Catholic-Church-Hollywood/137793272912027"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://blessedsacramenthollywood.org/contact-us/"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-				</div>
-				<div class="col-md-2 col-lg-2"></div>
-			</div>
-		</div>
-	</div>
+    <!-- ***** HUW 2018 SERVICE TAKELONGS ***** -->
+    <div id="service-takealongs" style="background-color: black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <br>
+                    <h3>If you are interested in joining MAGIS on a service takealong to Midnight Mission or Blessed Sacrament Church, please fill out and submit a form <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzuV8p8qOwJWR64Io_Snq6EXb9VrPzDaTB7QhkDusHoUChJw/viewform?c=0&w=1" target="_blank" style="color:#ff9900">here</a>.</h3>
+                    <br>
 
-	<!-- ***** END PLACEMENTS ***** -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** END HOHUW 2018 SERVICE TAKELONGSME ***** -->
 
 
-	<!-- ***** EVENTS ***** -->
+    <!-- ****** PLACEMENTS ****** -->
+
+    <div id="placements" class="placements">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <h1>Our Service Placements</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 wow fadeInRight" data-wow-delay="0.4s">
+                    <img src="images/VerbLogo.jpg">
+                    <h4>Verbum Dei High School</h4>
+                    <p>An all-male Jesuit high school located in Watts, CA, members engage in tutoring and after school activities, ensuring that the student body maintains a 100% acceptance rate to colleges.</p>
+                    <a href="https://www.verbumdei.us"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/verbumdeihs/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/VerbumDeiHS"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 wow fadeInRight" data-wow-delay="0.8s">
+                    <img src="images/SPYLogo.jpg">
+                    <h4>Safe Place For Youth</h4>
+                    <p>Safe Place for Youth is a shelter for youth experiencing the effects of Homelessness. Throughout the week, members serve at the Los Angeles placement by working directly with the youth. </p>
+                    <a href="http://www.safeplaceforyouth.org"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/SafePlaceForYouth/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/safeplaceforyouth/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 wow fadeInRight" data-wow-delay="1.2s">
+                    <img src="images/GSSLogo.jpg">
+                    <h4>Good Shepherd Shelter</h4>
+                    <p>Good Shepherd Shelter is a shelter for women and their children escaping domestic abuse. Members work with children through helping in the classroom, tutoring, and participating in after school activities. </p>
+                    <a href="http://www.goodshepherdshelter.org"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/TheGoodShepherdShelter"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/gsshelter/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 wow fadeInRight" data-wow-delay="0.8s">
+                    <img src="images/ElEspejoLogo.jpg">
+                    <h4>El Espejo</h4>
+                    <p>Members participate in the El Espejo mentoring program at Lennox Middle School by providing mentorship to middle school students, tutoring, and participating in after school activities and field trips.</p>
+                    <a href="http://lms.lennox.k12.ca.us"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/LennoxMiddleSchool/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/lennoxleap/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 wow fadeInRight" data-wow-delay="1.2s">
+                    <img src="images/BSCLogo.jpg">
+                    <h4>Blessed Sacrament Church</h4>
+                    <p>Blessed Sacrament Church is a parish in West Hollywood. Members serve in the food pantry and prepare and give out food to the community, helping to alleviate the effects of homelessness in the area. </p>
+                    <a href="https://blessedsacramenthollywood.org"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/pages/Blessed-Sacrament-Catholic-Church-Hollywood/137793272912027"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://blessedsacramenthollywood.org/contact-us/"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** END PLACEMENTS ***** -->
 
 
+    <!-- ***** EVENTS ***** -->
 
-	<div id="events" class="events">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<br>
-					<h1>Events</h1>
-					<hr>
-					<p class="wow fadeInUp" data-wow-delay="0.4s">MAGIS Men are also active on campus. Every year, we organize advocacy events and fundraisers aimed at engaging the LMU community and educating each other about the social justice issues related to homelessness and education.</p>
-					<br>
-					<a href="https://www.facebook.com/pg/LMUMagis/events/"><button class="btn wow fadeInUp" data-wow-delay="0.8s">UPCOMING EVENTS</button></a>
-					<br>
-				</div>
-			</div>
-		</div>
+    <div id="events" class="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <h1>Events</h1>
+                    <hr>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s">MAGIS Men are also active on campus. Every year, we organize advocacy events and fundraisers aimed at engaging the LMU community and educating each other about the social justice
+                        issues related to homelessness and education.</p>
+                    <br>
+                    <a href="https://www.facebook.com/pg/LMUMagis/events/"><button type="button" class="btn wow fadeInUp" data-wow-delay="0.8s">UPCOMING EVENTS</button></a>
+                    <br>
 
-		<div id="events-carousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example" data-slide-to="1"></li>
-				<li data-target="#carousel-example" data-slide-to="2"></li>
-			</ol>
-
-			<div class="carousel-inner wow fadeInRight" data-wow-delay="0.4s">
-				<div class="item active">
-					<div class="row">
-						<div class="col-md-2 col-lg-2"></div>
-						<div class="col-md-4 col-lg-4">
-							<a href="#"><img src="images/HUW.jpg" class="img-circle"/></a>
-						</div>
-						<div class="col-md-4 col-lg-4 caption">
-							<h3>Homelessness Understanding Week</h3>
-							<br>
-							<p><strong>WHEN:</strong> Fall Semester</p>
-							<p><strong>EVENT DESCRIPTION:</strong></p>
-							<p>This week long event aims to examine the deeper issues of homelessness. Members engage in different activities for the rest of the LMU community to join in, including group reflections, service take-alongs to some of our placements, panel speakers, and nightly sleep outs on cardboard boxes on campus.</p>
-						</div>
-						<div class="col-md-2 col-lg-2"></div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="row">
-						<div class="col-md-2 col-lg-2"></div>
-						<div class="col-md-4 col-lg-4">
-							<a href="#"><img src="images/BWB.jpg" class="img-circle"/></a>
-						</div>
-						<div class="col-md-4 col-lg-4 caption">
-							<h3>Better World Books Drive</h3>
-							<br>
-							<p><strong>WHEN:</strong> Finals Week semesterly</p>
-							<p><strong>EVENT DESCRIPTION:</strong></p>
-							<p>During finals week of every semester, we host our Better World Books Drive in front of the Bookstore, where we collect old books from students. Better World Books then uses and resells the books to fund education and literacy initiatives worldwide.</p>
-						</div>
-						<div class="col-md-2 col-lg-2"></div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="row">
-						<div class="col-md-2 col-lg-2"></div>
-						<div class="col-md-4 col-lg-4">
-							<a href="#"><img src="images/48hr.jpg" class="img-circle"/></a>
-						</div>
-						<div class="col-md-4 col-lg-4 caption">
-							<h3>48 Hour</h3>
-							<br>
-							<p><strong>WHEN:</strong> Spring Semester</p>
-							<p><strong>EVENT DESCRIPTION:</strong></p>
-							<p>Every Spring Semester, we organize a 48-hour fundraiser to raise money for a financial aid package for a Verbum Dei High School student. The fundraiser also includes a social justice event that revolves around issues in the education system.</p>
-						</div>
-					<div class="col-md-2 col-lg-2"></div>
-				</div>
-			</div>
-		</div>
-			<a class="left carousel-control" href="#events-carousel" data-slide="prev">
+                </div>
+            </div>
+        </div>
+        <div id="events-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner wow fadeInRight" data-wow-delay="0.4s">
+                <div class="container item active">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <a href="#"><img src="images/HUW.jpg" class="img-circle"/></a>
+                        </div>
+                        <div class="col-md-4 caption">
+                            <h3>Homelessness Understanding Week</h3>
+                            <br>
+                            <p><strong>WHEN:</strong> Fall Semester</p>
+                            <p><strong>EVENT DESCRIPTION:</strong></p>
+                            <p>This week long event aims to examine the deeper issues of homelessness. Members engage in different activities for the rest of the LMU community to join in, including group reflections, service take-alongs to some of
+                                our placements,
+                                panel speakers, and nightly sleep outs on cardboard boxes on campus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <a href="#"><img src="images/BWB.jpg" class="img-circle"/></a>
+                        </div>
+                        <div class="col-md-4 caption">
+                            <h3>Better World Books Drive</h3>
+                            <br>
+                            <p><strong>WHEN:</strong> Finals Week semesterly</p>
+                            <p><strong>EVENT DESCRIPTION:</strong></p>
+                            <p>During finals week of every semester, we host our Better World Books Drive in front of the Bookstore, where we collect old books from students. Better World Books then uses and resells the books to fund education and
+                                literacy
+                                initiatives worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <a href="#"><img src="images/48hr.jpg" class="img-circle"/></a>
+                        </div>
+                        <div class="col-md-4 caption">
+                            <h3>48 Hour</h3>
+                            <br>
+                            <p><strong>WHEN:</strong> Spring Semester</p>
+                            <p><strong>EVENT DESCRIPTION:</strong></p>
+                            <p>Every Spring Semester, we organize a 48-hour fundraiser to raise money for a financial aid package for a Verbum Dei High School student. The fundraiser also includes a social justice event that revolves around issues
+                                in the education system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#events-carousel" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			</a>
-			<a class="right carousel-control" href="#events-carousel" data-slide="next">
+            <a class="right carousel-control" href="#events-carousel" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<!-- ***** END EVENTS ***** -->
+    <!-- ***** END EVENTS ***** -->
 
-	<!-- ***** FOOTER ***** -->
+    <!-- ***** FOOTER ***** -->
 
-	<div id="contact" class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4">
-					<h4>Contact Us</h4>
-					<p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
-					<a href="mailto:magismen@gmail.com?Subject=Hello" target="_top"><p><i class="fa fa-envelope" aria-hidden="true"></i> magismen@gmail.com</p></a>
-					<!--<p><i class="fa fa-phone" aria-hidden="true"></i> +1 222 222 2222</p>-->
-					<a href="http://lmumagis.com"><p><i class="fa fa-globe" aria-hidden="true"></i> www.lmumagis.com</p></a>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<h4>About</h4>
-					<a href="https://orgsync.com/125286/chapter">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS - LMU EXP Online</p>
-					</a>
-					<a href="http://www.lmumagis.com">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS Service Organization</p>
-					</a>
-					<a href="http://www.lmu.edu">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> Loyola Marymount University</p>
-					</a>
-					<a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/">
-					<p><i class="fa fa-globe" aria-hidden="true"></i> LMU Center for Service and Action</p>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<h4>MAGIS Service Organization</h4>
-					<p>Loyola Marymount University
-					</br>1 LMU Drive
-					</br>Los Angeles, CA 90045
-					</p>
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
+                    <a href="mailto:magismen@gmail.com?Subject=Hello" target="_top">
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> magismen@gmail.com</p>
+                    </a>
+                    <!--<p><i class="fa fa-phone" aria-hidden="true"></i> +1 222 222 2222</p>-->
+                    <a href="http://lmumagis.com">
+                        <p><i class="fa fa-globe" aria-hidden="true"></i> www.lmumagis.com</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h4>About</h4>
+                    <a href="https://orgsync.com/125286/chapter">
+                        <p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS - LMU EXP Online</p>
+                    </a>
+                    <a href="http://www.lmumagis.com">
+                        <p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS Service Organization</p>
+                    </a>
+                    <a href="http://www.lmu.edu">
+                        <p><i class="fa fa-globe" aria-hidden="true"></i> Loyola Marymount University</p>
+                    </a>
+                    <a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/">
+                        <p><i class="fa fa-globe" aria-hidden="true"></i> LMU Center for Service and Action</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h4>MAGIS Service Organization</h4>
+                    <p>Loyola Marymount University
+                        </br>1 LMU Drive
+                        </br>Los Angeles, CA 90045
+                    </p>
 
-					<p>
-					<a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
-					<!--<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>-->
-					Follow Us @LMUMAGIS</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<p style="text-align: right; padding-top: 50px;">Website by Danico Pidlaoan</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <p>
+                        <a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+                        <!--<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>-->
+                        Follow Us @LMUMAGIS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="text-align: right; padding-top: 50px;">Website by Danico Pidlaoan</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- ***** END FOOTER ***** -->
+    <!-- ***** END FOOTER ***** -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/scrolling.js"></script>
-
-	<script>
-	new WOW().init();
-	</script>
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scrolling.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
+
 </html>
