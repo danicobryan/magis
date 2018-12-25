@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- TODO: fix instafeed.js -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <title>Media</title>
 </head>
 
-<body onload="$(document).ready(function(){$(this).scrollTop(0);});">
+<body>
 
     <!-- ***** NAVIGATION BAR ***** -->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-                <a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link mx-1" href="index.html">ABOUT</a>
+                <a class="nav-item nav-link mx-1" href="service.html">SERVICE</a>
+                <a class="nav-item nav-link mx-1" href="join.html">JOIN</a>
+                <a class="nav-item nav-link mx-1 active" href="media.html">MEDIA <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mx-1" href="#contact">CONTACT</a>
             </div>
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
-                <li><a href="index.html">ABOUT</a></li>
-                <li><a href="service.html">SERVICE AND EVENTS</a></li>
-                <li><a href="join.html">JOIN</a></li>
-                <li><a href="media.html">MEDIA</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -50,22 +47,21 @@
                     <hr>
                     <h2 class="wow fadeInUp" data-wow-delay="0.4s">Follow @lmumagis on Social Media</h2>
                     <br>
-
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center wow fadeInUp" data-wow-delay="0.8s">
                     <p class="text-center social-media">
-                        <a href="https://www.facebook.com/lmumagis"><i class="social-big fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/lmumagis"><i class="social-big fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/lmumagis"><i class="social-big fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/lmumagis"><i class="social-big fab fa-instagram" aria-hidden="true"></i></a>
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 instagram">
                     <h3 class="wow fadeInUp text-center" data-wow-delay="1.2s"> Check out our Instagram Feed!</h3>
-                    <div id="instafeed" class="wow fadeInUp" data-wow-delay="0.8s"></div>
-                    <p class="wow fadeInUp" style="color: black;" data-wow-delay="0.8s"><a href="https://www.instagram.com/lmumagis">SEE MORE</a></p>
+                    <div id="instafeed" class="wow fadeInUp" data-wow-delay="1.4s"></div>
+                    <p class="wow fadeInUp" style="color: black;" data-wow-delay="1.4s"><a href="https://www.instagram.com/lmumagis">SEE MORE</a></p>
                 </div>
             </div>
             <div class="row facebook">
@@ -74,7 +70,7 @@
                     <br>
                     <p>Like our page to connect with us and keep updated about our involvement and upcoming events!</p>
                     <br>
-                    <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size: 50px;"></i>
+                    <i class="far fa-thumbs-up" aria-hidden="true" style="font-size: 50px;"></i>
                     <br>
                 </div>
                 <div class="col-md-6 text-center">
@@ -97,45 +93,49 @@
             <div class="row">
                 <div class="col-md-4">
                     <h4>Contact Us</h4>
-                    <p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
+                    <a href="https://www.lmu.edu/">
+                        <p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
+                    </a>
                     <a href="mailto:magismen@gmail.com?Subject=Hello" target="_top">
                         <p><i class="fa fa-envelope" aria-hidden="true"></i> magismen@gmail.com</p>
                     </a>
                     <a href="http://lmumagis.com">
-                        <p><i class="fa fa-globe" aria-hidden="true"></i> www.lmumagis.com</p>
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> www.lmumagis.com</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <h4>About</h4>
                     <a href="https://orgsync.com/125286/chapter">
-                        <p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS - LMU EXP Online</p>
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> MAGIS - LMU EXP Online</p>
                     </a>
                     <a href="http://www.lmumagis.com">
-                        <p><i class="fa fa-globe" aria-hidden="true"></i> MAGIS Service Organization</p>
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> MAGIS Service Organization</p>
                     </a>
                     <a href="http://www.lmu.edu">
-                        <p><i class="fa fa-globe" aria-hidden="true"></i> Loyola Marymount University</p>
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> Loyola Marymount University</p>
                     </a>
                     <a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/">
-                        <p><i class="fa fa-globe" aria-hidden="true"></i> LMU Center for Service and Action</p>
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> LMU Center for Service and Action</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <h4>MAGIS Service Organization</h4>
-                    <p>Loyola Marymount University
+                    <p>
+                        Loyola Marymount University
                         </br>1 LMU Drive
                         </br>Los Angeles, CA 90045
                     </p>
                     <p>
-                        <a href="https://www.facebook.com/lmumagis"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/lmumagis"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/lmumagis"><i class="social fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/lmumagis"><i class="social fab fa-instagram" aria-hidden="true"></i></a>
                         <!--<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>-->
-                        Follow Us @LMUMAGIS</p>
+                        Follow Us @LMUMAGIS
+                    </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <p style="text-align: right; padding-top: 50px;">Website by Danico Pidlaoan</p>
+                <div class="col-md-12 credits">
+                    <p>Website by <a href="https://github.com/danicobryan/"><b>Danico Pidlaoan</b></a> and <a href="https://github.com/dmoini"><b>Donovan Moini</b></a></p>
                 </div>
             </div>
         </div>
@@ -144,7 +144,9 @@
     <!-- ***** END FOOTER ***** -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/scrolling.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>

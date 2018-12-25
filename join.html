@@ -5,35 +5,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <title>Join Us</title>
 </head>
 
-<body onload="$(document).ready(function(){$(this).scrollTop(0);});">
+<body>
 
     <!-- ***** NAVIGATION BAR ***** -->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-                <a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img id="mainLogo" src="images/LogoHeading.jpg"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link mx-1" href="index.html">ABOUT</a>
+                <a class="nav-item nav-link mx-1" href="service.html">SERVICE</a>
+                <a class="nav-item nav-link mx-1 active" href="join.html">JOIN <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mx-1" href="media.html">MEDIA</a>
+                <a class="nav-item nav-link mx-1" href="#contact">CONTACT</a>
             </div>
-            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar">
-                <li><a href="index.html">ABOUT</a></li>
-                <li><a href="service.html">SERVICE AND EVENTS</a></li>
-                <li><a href="join.html">JOIN</a></li>
-                <li><a href="media.html">MEDIA</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -43,19 +38,16 @@
     <!-- ***** HOME ***** -->
 
     <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="8000">
-        <!-- Indicators -->
-        <!--
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>-->
+    <header id="join-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="8000">
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#join-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#join-carousel" data-slide-to="1"></li>
+            <li data-target="#join-carousel" data-slide-to="2"></li>
+        </ol> -->
 
-        <!-- Wrapper for Slides -->
-        <div id="join-home" class="carousel-inner join-home">
+        <div class="carousel-inner">
             <div class="carousel-caption">
-                <div class="intro-body full-width text-center">
+                <div class="full-width text-center">
                     <h1 class="main-heading wow fadeInUp" data-wow-delay="0.4s">MAGIS RECRUITMENT</h1>
                     <h1 class="small-heading wow fadeInUp" data-wow-delay="0.8s">Interested in becoming a MAGIS Man?</h1>
                     <br>
@@ -63,21 +55,21 @@
                     <a href="https://orgsync.com/169839/forms/300069"><button class="btn wow fadeInUp" type="button" data-wow-delay="1.8s">APPLY ONLINE</button></a>
                 </div>
             </div>
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
+            <div class="carousel-item active">
                 <div class="overlay"></div>
-                <div class="fill" style="background-image:url('images/inductionpillarscopy.jpg');"></div>
+                <img class="fill" src="images/inductionpillarscropped.jpg" alt="Induction 2016">
             </div>
         </div>
 
         <!-- Controls -->
-        <!--
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="icon-prev"></span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="icon-next"></span>
-		</a>-->
+        <!-- <a class="carousel-control-prev" href="#join-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#join-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
     </header>
 
     <!-- ***** END HOME ***** -->
@@ -97,7 +89,7 @@
 			</div>
 			<div class="row row-1">
 				<div class="col-md-6 text-center left-side wow fadeInRight" data-wow-delay="0.4s">
-					<img src="images/Recruitment.png" class="block-image img-responsive" height=75% width=75%>
+					<img src="images/Recruitment.png" class="block-image img-fluid" height=75% width=75%>
 				</div>
 				<div class="col-md-6 right-side wow fadeInRight" data-wow-delay="0.8s">
 					<h3>RECRUITMENT CHECKLIST</h3>
@@ -123,7 +115,7 @@
                     <p>All applications can be found on the <a href="https://orgsync.com/169839/forms/300069"><u>Service Organization Community LEO page</u></a>.</p>
                 </div>
                 <div class="col-md-6 right-side wow fadeInLeft" data-wow-delay="0.4s">
-                    <img src=" images/inductionpillarscopysquare.jpg " class="block-image img-responsive">
+                    <img src=" images/inductionpillarscopysquare.jpg " class="block-image img-fluid">
 
                 </div>
             </div>
@@ -132,49 +124,54 @@
 
     <!-- ***** FOOTER ***** -->
 
-    <div id="contact " class="contact ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-4 ">
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
                     <h4>Contact Us</h4>
-                    <p><i class="fa fa-home " aria-hidden="true "></i> Loyola Marymount University</p>
-                    <a href="mailto:magismen@gmail.com?Subject=Hello " target="_top ">
-                        <p><i class="fa fa-envelope " aria-hidden="true "></i> magismen@gmail.com</p>
+                    <a href="https://www.lmu.edu/">
+                        <p><i class="fa fa-home" aria-hidden="true"></i> Loyola Marymount University</p>
                     </a>
-                    <a href="http://lmumagis.com ">
-                        <p><i class="fa fa-globe " aria-hidden="true "></i> www.lmumagis.com</p>
+                    <a href="mailto:magismen@gmail.com?Subject=Hello" target="_top">
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> magismen@gmail.com</p>
+                    </a>
+                    <a href="http://lmumagis.com">
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> www.lmumagis.com</p>
                     </a>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4">
                     <h4>About</h4>
-                    <a href="https://orgsync.com/125286/chapter ">
-                        <p><i class="fa fa-globe " aria-hidden="true "></i> MAGIS - LMU EXP Online</p>
+                    <a href="https://orgsync.com/125286/chapter">
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> MAGIS - LMU EXP Online</p>
                     </a>
-                    <a href="http://www.lmumagis.com ">
-                        <p><i class="fa fa-globe " aria-hidden="true "></i> MAGIS Service Organization</p>
+                    <a href="http://www.lmumagis.com">
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> MAGIS Service Organization</p>
                     </a>
-                    <a href="http://www.lmu.edu ">
-                        <p><i class="fa fa-globe " aria-hidden="true "></i> Loyola Marymount University</p>
+                    <a href="http://www.lmu.edu">
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> Loyola Marymount University</p>
                     </a>
-                    <a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/ ">
-                        <p><i class="fa fa-globe " aria-hidden="true "></i> LMU Center for Service and Action</p>
+                    <a href="http://studentaffairs.lmu.edu/activities/centerforserviceandaction/">
+                        <p><i class="fa fa-globe-americas" aria-hidden="true"></i> LMU Center for Service and Action</p>
                     </a>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4">
                     <h4>MAGIS Service Organization</h4>
-                    <p>Loyola Marymount University
+                    <p>
+                        Loyola Marymount University
                         </br>1 LMU Drive
                         </br>Los Angeles, CA 90045
                     </p>
                     <p>
-                        <a href="https://www.facebook.com/lmumagis "><i class="social fa fa-facebook " aria-hidden="true "></i></a>
-                        <a href="https://www.instagram.com/lmumagis "><i class="social fa fa-instagram " aria-hidden="true "></i></a>
-                        <!-- <input type="email " placeholder="Subscribe For Updates "><button class="btn btn-success ">Subscribe</button> Follow Us @LMUMAGIS</p> -->
+                        <a href="https://www.facebook.com/lmumagis"><i class="social fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/lmumagis"><i class="social fab fa-instagram" aria-hidden="true"></i></a>
+                        <!--<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>-->
+                        Follow Us @LMUMAGIS
+                    </p>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-md-12 ">
-                    <p style="text-align: right; padding-top: 50px; ">Website by Danico Pidlaoan</p>
+            <div class="row">
+                <div class="col-md-12 credits">
+                    <p>Website by <a href="https://github.com/danicobryan/"><b>Danico Pidlaoan</b></a> and <a href="https://github.com/dmoini"><b>Donovan Moini</b></a></p>
                 </div>
             </div>
         </div>
@@ -183,7 +180,9 @@
     <!-- ***** END FOOTER ***** -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="js/bootstrap.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/wow.min.js "></script>
     <script src="js/scrolling.js "></script>
     <script>
