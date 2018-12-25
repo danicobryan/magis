@@ -1,3 +1,7 @@
+:root {
+    --magisGold: #f9b300;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@ html, body {
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    /* margin-top: 50px; */
 }
 
 section {
@@ -56,6 +61,10 @@ hr {
     width: 100px;
 }
 
+#home-carousel, #service-carousel, #join-carousel, #media {
+    margin-top: 60px;
+}
+
 .btn {
     background-color: transparent;
     border-color: white;
@@ -76,8 +85,9 @@ hr {
 }
 
 /***** NAVIGATION BAR *****/
-.navbar-inverse {
-    background-color: black;
+
+.navbar-dark, .bg-dark  {
+    background-color: black !important;
 }
 
 .navbar-brand {
@@ -88,12 +98,19 @@ hr {
     height: 100%;
     padding: 0px;
     width: auto;
+    margin-left: -15px;
+}
+
+.navbar-toggler:hover {
+    background-color: #333333;
 }
 
 /***** END NAVIGATION BAR *****/
+
 /***** HOME PAGE *****/
 header {
     background-color: black;
+    height: calc(100vh - 60px) !important;
 }
 
 .overlay {
@@ -108,7 +125,7 @@ header {
     width: 100%;
 }
 
-.carousel, .item, .active {
+.carousel, .carousel-item, .active {
     height: 100%;
 }
 
@@ -117,9 +134,9 @@ header {
     -webkit-background-size: cover;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    /*-o-background-size: cover;*/
 }
 
 .carousel, .carousel-inner {
@@ -131,7 +148,7 @@ header {
     z-index: 0;
 }
 
-.carousel-fade .carousel-inner .item {
+.carousel-fade .carousel-inner .carousel-item {
     -moz-transition-property: opacity;
     -o-transition-property: opacity;
     -webkit-transition-property: opacity;
@@ -143,17 +160,7 @@ header {
     opacity: 1;
 }
 
-.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-}
-
-.carousel-fade .carousel-control {
+.carousel-fade .carousel-control-prev, .carousel-fade .carousel-control-next {
     z-index: 2;
 }
 
@@ -205,6 +212,7 @@ header {
 }
 
 /***** END HOME PAGE *****/
+
 /***** ABOUT US *****/
 .aboutUs {
     background-color: #000000;
@@ -244,30 +252,10 @@ header {
     background-color: transparent;
     border-radius: 65%;
     color: white;
-    /*font-size: 30px;*/
     font-size: 60px;
     height: 80px;
-    /*padding: 25px 20px;*/
     padding-bottom: 40px;
     width: 80px;
-}
-
-/**CSS FOR THE RING**/
-.glyphicon-ring {
-    border: 4px solid white;
-    /*width: 60px;
-  height: 60px;*/
-    border-radius: 50%;
-    color: white;
-    display: inline-table;
-    text-align: center;
-}
-
-/**CSS FOR ICON WITH NO BACKGROUND COLOR**/
-.glyphicon-ring .glyphicon-bordered {
-    display: table-cell;
-    font-size: 20px;
-    vertical-align: middle;
 }
 
 @media(max-width:768px) {
@@ -322,7 +310,9 @@ header {
 }
 
 /***** END ABOUT US *****/
+
 /***** PLACEMENTS *****/
+
 .placements {
     background-color: white;
     padding: 50px 0;
@@ -382,6 +372,7 @@ header {
 }
 
 /***** END PLACEMENTS *****/
+
 /***** EVENTS *****/
 .events {
     background-color: black;
@@ -391,39 +382,37 @@ header {
 }
 
 .events img {
-    height: 375px;
-    padding: 50px;
+    height: 100%;
+    width: 100%;
+    padding: 15%;
     text-align: center;
 }
 
-.events .caption {
+.caption {
     padding-bottom: 50px;
-    padding-left: 50px;
     text-align: left;
 }
 
-.events .carousel-control.left, .events .carousel-control.right {
-    background-image: none
+.caption strong {
+    font-weight: 700;
 }
 
 @media(max-width:768px) {
     .events img {
         height: 300px;
-        padding: 30px;
+        padding: 20px;
         text-align: center;
         width: auto;
     }
 
-    .events {
-        text-align: center;
-    }
-
-    .events .caption {
+    .caption {
         padding-top: 0px;
+        text-align: center;
     }
 }
 
 /***** END EVENTS *****/
+
 /****** JOIN *******/
 .join {
     background-color: #181818;
@@ -437,7 +426,6 @@ header {
     background-size: cover;
     height: auto;
     width: 100%;
-    /*-o-background-size: cover;*/
 }
 
 .join img {
@@ -453,7 +441,6 @@ header {
 
 .join p {
     text-align: left;
-    ;
 }
 
 .join .col-md-6, .join .col-lg-6 {
@@ -478,17 +465,11 @@ header {
 }
 
 .join .left-side {
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-top: 50px;
+    padding: 50px 50px 50px 30px;
 }
 
 .join .right-side {
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding: 50px 30px 50px 50px;
 }
 
 @media(max-width:768px) {
@@ -503,10 +484,7 @@ header {
     }
 
     .join .left-side, .join .right-side {
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
+        padding: 20px;
     }
 
     .join .col-md-6, .join .col-lg-6 {
@@ -516,6 +494,7 @@ header {
 }
 
 /***** END JOIN *****/
+
 /***** MEDIA *****/
 .media {
     padding-bottom: 100px;
@@ -542,7 +521,7 @@ header {
     width: 50px !important;
 }
 
-.media p i: hover {
+.media p i:hover {
     background-color: gray;
 }
 
@@ -567,7 +546,6 @@ header {
     opacity: 1;
     overflow: hidden;
     padding: 5px;
-    /*height: 150px;*/
     width: 20%;
 }
 
@@ -609,6 +587,7 @@ header {
 }
 
 /******* END MEDIA ********/
+
 /******* FOOTER ********/
 .contact {
     background-color: #222222;
@@ -629,7 +608,15 @@ header {
 
 .social-big:hover {
     background-color: #cccccc;
-    /* color: #f9b300; */
+}
+
+.credits {
+    text-align: right; 
+    padding-top: 50px;
+}
+
+.credits a {
+    color: var(--magisGold);
 }
 
 /***** END FOOTER *****/
